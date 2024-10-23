@@ -25,6 +25,7 @@ nav a{
 .button-box{
     text-align: center;
 }
+
 main section{
     text-align: center;
 }
@@ -61,15 +62,15 @@ nav a:hover{
     border-radius: 5px;
 }
 
-.card-img {
+.card-img{
     border: 10px solid #d9c2a3;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
 
-main section img {
+main section img{
     box-sizing: border-box;
 }
 
@@ -111,7 +112,7 @@ footer p{
     font-size: 1.2em;
 }
 
-footer p a:hover {
+footer p a:hover{
     text-decoration: underline;
 }
 
