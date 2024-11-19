@@ -254,15 +254,85 @@ h4{
  #rivers-page {
     max-width: 1600px;
     margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+
+ }
+
+ #rivers-title {
+    font-size: 25px;
+ }
+
+ .salmon-img, .rafting-img, .colorado-img { 
+    grid-column: 1/2;
+    margin: 50px auto; 
+    width: 60%;
+    text-align: left;
+ }
+
+.rivers-heading-1 {
+    grid-row: 1/2;
+}
+
+ .salmon-img {
+    grid-row: 1/3;
+ }
+
+.rivers-p-1 {
+    grid-row: 2/3;
+}
+
+.rivers-heading-2 {
+    grid-row: 3/4;
+}
+
+.rafting-img {
+    grid-row: 3/5;
+}
+
+.rivers-p-2 {
+    grid-row: 4/5;
+}
+
+.rivers-heading-3 {
+    grid-row: 5/6;
+}
+.colorado-img {
+    grid-row: 5/7;
+}
+
+.rivers-p-3 {
+    grid-row: 6/7;
+}
+
+ .rivers-p-1, .rivers-p-2, .rivers-p-3 {
+    grid-column: 2/4;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 60px;
+    text-align: left;
+    font-size: 16px;
+ }
+ .rivers-heading-1, .rivers-heading-2, .rivers-heading-3 {
+    grid-column: 2/3;
+    font-size: 22px;
+ }
+
+ #main-river {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px 200px 100px 200px 100px;
  }
+
+ .rivers_hero_img{
+    display: inline-block;
+    text-align: center;
+ }
+ /* form styles */
 
  .contactus {
     text-align: center;
  }
-
- /* form styles */
 
 form {
   display: inline-block;
