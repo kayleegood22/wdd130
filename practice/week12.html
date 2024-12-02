@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+<body>
+    <h1>The Scottish Band: Belle and Sebastian</h1>
+    <button class="accordion">About Belle and Sebastian</button>
+    <div class="panel">
+    <p>Belle and Sebastian are a Scottish indie pop band formed in Glasgow in 1996. Known for their charming, whimsical sound and thoughtful lyrics, the band has developed a devoted following worldwide. Their music blends folk, pop, and alternative rock, often featuring storytelling elements that explore themes of love, longing, and personal reflection. Over the years, the band has evolved while maintaining a distinct, emotive style.</p>
+    </div>
+
+    <button class="accordion">Musical Legacy and Influence</button>
+    <div class="panel">
+    <p>Belle and Sebastian's early albums, like If You're Feeling Sinister (1996) and The Boy with the Arab Strap (1998), were critically acclaimed and helped define the indie pop genre of the late '90s and early 2000s. With their lush arrangements and introspective songwriting, the band has influenced countless artists in the indie and alternative music scenes. Their ability to blend melancholy with joy, often using lush orchestration and clever wordplay, has earned them a place among the genre’s most beloved acts.</p>
+    </div>
+
+    <button class="accordion">The Band Today</button>
+    <div class="panel">
+    <p>Belle and Sebastian continue to make music and tour, with a sound that has matured but still retains the intimate, delicate feel that fans love. Their more recent albums, like Girls in Peacetime Want to Dance (2015) and A Bit of Previous (2022), showcase their ability to experiment with different styles while staying true to their roots. The band remains a key player in the indie music landscape, beloved for both their artistic integrity and their loyal fanbase.</p>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
