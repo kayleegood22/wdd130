@@ -312,6 +312,7 @@ main {
 .discover-head-1 {
   text-align: left;
   margin-left: 0px;
+  font-size: 30px;
 }
 
 .discover-p-1 {
@@ -330,6 +331,7 @@ main {
 .discover-head-2 {
   grid-column: 1/3;
   text-align: left;
+  font-size: 30px;
 }
 
 .alvvays-1 {
@@ -355,6 +357,7 @@ main {
 
 .discover-head-3 {
   grid-column: 1/3;
+  font-size: 30px;
 }
 
 .discover-p-3 {
@@ -385,6 +388,11 @@ main {
   color: white;
   font-size: 75px;
   text-decoration-color: #030506;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.digital_age_title {
+  font-size: 30px;
 }
 
 .digital_age_p {
@@ -399,7 +407,9 @@ main {
 
 .indie_today_title {
   grid-column: 1/3;
-  grid-row: 1/2
+  grid-row: 1/2;
+  font-size: 30px;
+
 }
 
 .indie_today_p {
@@ -411,17 +421,21 @@ main {
 .indie_today_img {
   width: 250px;
   grid-column: 2/3;
-  grid-row: 2/3
+  grid-row: 2/3;
+  align-self: center;
+  margin-left: 50px;
 }
 #conclusion {
   display: grid;
   grid-template-columns: 700px 1fr;
   grid-template-rows: 1fr 400px;
+  margin-bottom: 75px;
 }
 
 .conclusion_title {
   grid-column: 1/3;
   grid-row: 1/2;
+  font-size: 30px;
 
 }
 
@@ -435,4 +449,10 @@ main {
   width: 250px;
   grid-column: 2/3;
   grid-row: 2/3;
+  align-self: center;
+  margin-left: 50px;
 }
+
+/* footer */
+
+
